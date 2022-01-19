@@ -20,7 +20,8 @@ let question = [
     {text : "Qui est le/la plus souvent bourré.e?"},
     {text : "Qui finiras en prison?"},
     {text : "Qui à le plus le sang chaud?"},
-    {text : "Qui boit le plus?"}
+    {text : "Qui boit le plus?"},
+    {text : "Qui a le plus gros cul ?"}
 ]
 
 module.exports = question;
