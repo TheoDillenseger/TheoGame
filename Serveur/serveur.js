@@ -268,7 +268,7 @@ io.on('connection',(socket)=> {
         console.log(getAllRoom());
     })
 })
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5500;
 
 serveur.listen(PORT , () => console.log(`Serveur listen on port ${PORT}`));
 

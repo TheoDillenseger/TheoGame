@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 let socket;
 
 
-const ENDPOINT = 'localhost:5000'
+const ENDPOINT = 'localhost:5500'
 
 class Game2 extends Component {
     constructor(props) {
