@@ -21,7 +21,31 @@ let question = [
     {text : "Qui finiras en prison?"},
     {text : "Qui à le plus le sang chaud?"},
     {text : "Qui boit le plus?"},
-    {text : "Qui baise le plus"}
+    {text : "Qui a le plus gros cul ?"},
+    {text : "Qui est le plus beau"},
+    {text : "qui est le plus gentille ?"},
+    {text : "Avec qui tu sortirai"},
+    {text : "quelle personne pourais tu faire l'amour ?"},
+    {text : "qui est le plus rigolo"},
+    {text : "qui est le plus gros/grosse"},
+    {text : "qui est le/la plus moche(e)"},
+    {text : "qui a les plus belle fesse"},
+    {text : "a Quelle personne pourais tu faire une gaterie"},
+    {text : "quelle personne aprecie tu le moins"},
+    {text : "qui a la plus petite bite ?"},
+    {text : "qui a la plus grosse bite ?"},
+    {text : "qui pourais tuer ?"},
+    {text : "qui pourais tu sucer ?"},
+    {text : "qui pue le plus ?"},
+    {text : "qui a l'anus le plus dilater ?"},
+    {text : "qui est le plus gros geek ?"},
+    {text : "qui est le plus gros radin ? (tema la taille du rat"},
+    {text : "qui a le plus de couille ?"},
+    {text : "qui pourais baiser sa mere ?"},
+    {text : "qui pourais baiser une shemale ?"},
+    {text : "qui pourais baiser un animal ?"},
+    {text : "qui est le plus gay ?"}
+
 ]
 
 module.exports = question;
