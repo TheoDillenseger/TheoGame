@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+#titre{
+  color:blue;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media (max-width : 1000px){
+  .App{
+    background-color: red;
+  }
+
+}
+@media (max-width : 320px){
+
+		  
 }
