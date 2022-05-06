@@ -63,17 +63,24 @@ const retourAcceuil = () => {
 return(
 
     <div className="container">
-    <h1>Rejoindre une partie</h1>
-    <h3>code de la partie :</h3>
-    <input placeholder="code" onChange={(event)=> setRoom(event.target.value)}/>
-    <Link onClick={event => (existRoom(room)) ? null:  event.preventDefault() } to={`/gameMenu?name=${name}&room=${room}`}>
-    <button type="submit" className="btn btn-primary">go</button>
-    </Link>
-    <br/>
-    <p>{message}</p>
-    <br/>
+    <h2>Rejoindre une partie</h2>
     
-    <button onClick={() => retourAcceuil()} className="btn btn-danger" type="submit">retour au menu</button>
+    <div className='form__group field'> 
+        <input placeholder="Code" className="joinInputCode" type="text" onChange={(event)=> setRoom(event.target.value)}/>
+        <label for="pseudo" class="form__labelCode">Code</label>
+
+
+        </div>
+
+
+    <Link onClick={event => (existRoom(room)) ? null:  event.preventDefault() } to={`/gameMenu?name=${name}&room=${room}`}>
+    <button type="submit" className="btn_Rejoindre">go</button>
+    </Link>
+    
+    <p>{message}</p>
+    
+    
+    <button onClick={() => retourAcceuil()} className="btn_Creer" type="submit">retour au menu</button>
     
     </div>
     

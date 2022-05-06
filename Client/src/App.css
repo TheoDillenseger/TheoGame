@@ -1,5 +1,12 @@
+@font-face {font-family: "paradiso";
+  src: url("./font/Paradiso.ttf") format('truetype');
+}
+
+
+
 .App {
   text-align: center;
+  
 }
 #titre{
   color:blue;
@@ -48,3 +55,173 @@
 
 		  
 }
+
+#root{
+  height: 100%;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  
+  height: 100%;
+  
+}
+
+
+body{
+  height: auto;
+  background: linear-gradient(160deg, #06d6a0 75%, #073b4c 25% );
+}
+html{height: 100%;}
+
+.titre{
+  font-family: paradiso;
+  font-size: 70px;
+}
+.btn_Rejoindre{
+  width: 200px;
+  border: none;
+  background-color: #ffd166 ;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
+.btn_Creer{
+  width: 200px;
+  border: none;
+  background-color: #ffd166;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  
+}
+
+
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 30px;
+  width: 50%;
+}
+
+
+.joinInput{
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 3px solid black;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  
+}
+
+  .joinInput::placeholder {
+    color: transparent;
+  }
+  .joinInput:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    z-index: -1;
+  }
+  .joinInput:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+    z-index: -1;
+
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: black;
+    z-index: -1;
+
+  }
+
+
+
+
+
+  .joinInputCode{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid black;
+    outline: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-align: center;
+
+  }
+  
+    .joinInputCode::placeholder {
+      color: transparent;
+      text-align: center;
+
+    }
+    .joinInputCode:placeholder-shown ~ .form__labelCode {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+      z-index: -1;
+      text-align: center;
+
+
+    }
+    .joinInputCode:placeholder-shown ~ .form__labelCode {
+      font-size: 1.3rem;
+      cursor: text;
+      top: 20px;
+      z-index: -1;
+      text-align: center;
+
+
+
+    }
+    
+    .form__labelCode {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: black;
+      z-index: -1;
+      text-align: center;
+
+    }
+
+  
+  .listeUtilisateur{
+    padding: 0px;
+    margin-top: 20px;
+    
+  }
+
+  .liUtilisateur{
+    font-size: 1.3em;
+  }
+  
+
+  

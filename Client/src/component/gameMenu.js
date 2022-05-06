@@ -155,13 +155,13 @@ function GameMenu({location}){
                 <h1>room : {room}</h1>
                 <br/>
                 <h4>Utilisateurs connectés :</h4>
-                <ul>
+                <ul className='listeUtilisateur'>
                 {users.map(user =>
-                    <li><h6>{user.username}</h6></li>
+                    <li ><h6 className='liUtilisateur'>{user.username}</h6></li>
                     )}
                 </ul>
                 <br/>
-                <button onClick={() => retourAcceuil()} className="btn btn-danger" type="submit">retour au menu</button>
+                <button onClick={() => retourAcceuil()} className="btn_Creer" type="submit">retour au menu</button>
                 
     
                 

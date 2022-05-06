@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import queryString from 'query-string'
 import io from 'socket.io-client'
+
 let socket;
 
 
@@ -94,7 +95,7 @@ class Game extends Component {
         setTimeout(this.functionBoolAttenteResultat, 3000)
         if(this.state.afficheResultat === true){
             this.setState({
-                resultatBonus : 'bonus activer'
+                resultatBonus : 'bonus activé'
             })
         }
         else{
@@ -287,7 +288,7 @@ class Game extends Component {
                         <br />
                         <ul className="list-group" >{this.state.usersView.map(user =>
                             <li className="list-group-item">
-                                <button type="button" className="btn btn-info" value={user.id} onClick={(e) => this.vote(e)} >  {user.username}</button>
+                                <button type="button" className="btn_Creer" value={user.id} onClick={(e) => this.vote(e)} >  {user.username}</button>
                             </li>
                         )}
                         </ul>
@@ -309,7 +310,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>nb de vote : {user.nbDeVote}</h4>
                                             </li>
                                         )}
@@ -328,7 +329,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>nb de vote : {user.nbDeVote}</h4>
                                             </li>
                                         )}
@@ -352,7 +353,7 @@ class Game extends Component {
                                     <br />
                                     <ul className="list-group" >{this.state.usersTrier.map(user =>
                                         <li className="list-group-item">
-                                            <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                            <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                             <h4>nb de vote : {user.nbDeVote}</h4>
                                         </li>
                                     )}
@@ -394,7 +395,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>a été voté par : {this.formatVoterPar(user.voterPar)}</h4>
                                             </li>
                                         )}
@@ -418,7 +419,7 @@ class Game extends Component {
                                     <br />
                                     <ul className="list-group" >{this.state.usersTrier.map(user =>
                                         <li className="list-group-item">
-                                            <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                            <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                             <h4>a été voté par : {this.formatVoterPar(user.voterPar)}</h4>
                                         </li>
                                     )}
@@ -443,7 +444,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>nb de vote : {user.nbDeVote}</h4>
                                             </li>
                                         )}
@@ -463,7 +464,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>nb de vote : {user.nbDeVote}</h4>
                                             </li>
                                         )}
@@ -488,7 +489,7 @@ class Game extends Component {
                                     <br />
                                     <ul className="list-group" >{this.state.usersTrier.map(user =>
                                         <li className="list-group-item">
-                                            <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                            <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                             <h4>nb de vote : {user.nbDeVote}</h4>
                                         </li>
                                     )}
@@ -512,7 +513,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>a été voté par : {this.formatVoterPar(user.voterPar)}</h4>
                                             </li>
                                         )}
@@ -531,7 +532,7 @@ class Game extends Component {
                                         <br />
                                         <ul className="list-group" >{this.state.usersTrier.map(user =>
                                             <li className="list-group-item">
-                                                <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                                <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                                 <h4>a été voté par : {this.formatVoterPar(user.voterPar)}</h4>
                                             </li>
                                         )}
@@ -555,7 +556,7 @@ class Game extends Component {
                                     <br />
                                     <ul className="list-group" >{this.state.usersTrier.map(user =>
                                         <li className="list-group-item">
-                                            <button type="button" className="btn btn-info" value={user.username} >  {user.username}</button>
+                                            <button type="button" className="btn_Creer" value={user.username} >  {user.username}</button>
                                             <h4>a été voté par : {this.formatVoterPar(user.voterPar)}</h4>
                                         </li>
                                     )}
