@@ -84,7 +84,7 @@ class Game2 extends Component {
         })
 
         socket.on('goToRoom',()=>{
-            window.location = `http://localhost:3000/gameMenu?name=${this.state.name}&room=${this.state.pinGamme}&id=${this.state.id}`
+            window.location = `http://213.32.88.158/gameMenu?name=${this.state.name}&room=${this.state.pinGamme}&id=${this.state.id}`
 
         })
 
@@ -196,7 +196,7 @@ class Game2 extends Component {
 
     }
     boutonQuitter(e){
-        window.location = `http://localhost:3000/gameMenu?name=${this.state.name}&room=${this.state.pinGamme}`
+        window.location = `http://213.32.88.158/gameMenu?name=${this.state.name}&room=${this.state.pinGamme}`
 
     }
     

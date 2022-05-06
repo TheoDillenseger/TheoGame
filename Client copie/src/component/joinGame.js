@@ -57,7 +57,7 @@ const existRoom= (roomid) => {
    
 }
 const retourAcceuil = () => {
-    window.location = `http://213.32.88.158:3000/`
+    window.location = `http://213.32.88.158/`
 }
 
 return(

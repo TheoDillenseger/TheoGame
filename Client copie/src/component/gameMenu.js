@@ -74,19 +74,19 @@ function GameMenu({location}){
             console.log('Game STTTTTTTTTTARRRRTTTTED IDD ::::::>>>>  : '+id)
             if(choixJeux == 'game'){
                 if(id == undefined){
-                    window.location = `http://213.32.88.158:3000/game?name=${name}&pinGamme=${roomi}&id=${socket.id}`
+                    window.location = `http://213.32.88.158/game?name=${name}&pinGamme=${roomi}&id=${socket.id}`
                 }
                 else{
-                    window.location = `http://213.32.88.158:3000/game?name=${name}&pinGamme=${roomi}&id=${id}`
+                    window.location = `http://213.32.88.158/game?name=${name}&pinGamme=${roomi}&id=${id}`
     
                 }
 
             }else{
                 if(id == undefined){
-                    window.location = `http://213.32.88.158:3000/game2?name=${name}&pinGamme=${roomi}&id=${socket.id}`
+                    window.location = `http://213.32.88.158/game2?name=${name}&pinGamme=${roomi}&id=${socket.id}`
                 }
                 else{
-                    window.location = `http://213.32.88.158:3000/game2?name=${name}&pinGamme=${roomi}&id=${id}`
+                    window.location = `http://213.32.88.158/game2?name=${name}&pinGamme=${roomi}&id=${id}`
     
                 }
 
@@ -106,7 +106,7 @@ function GameMenu({location}){
         
     }
     const retourAcceuil = () => {
-        window.location = `http://213.32.88.158:3000/`
+        window.location = `http://213.32.88.158/`
     }
     
     if(user.role === 'admin'){
