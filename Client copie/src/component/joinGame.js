@@ -4,7 +4,7 @@ import queryString from 'query-string';
 import io from 'socket.io-client'
 import axios from 'axios'
 let socket;
-const ENDPOINT = 'localhost:5000'
+const ENDPOINT = '213.32.88.158:5000'
 
 const JoinGame = ({location}) =>{
 
@@ -19,7 +19,7 @@ const JoinGame = ({location}) =>{
         console.log(name)
         setName(name)
         let copyRooms = [];
-        axios.get(`http://localhost:5000/users/getRooms`)
+        axios.get(`http://${ENDPOINT}/users/getRooms`)
         .then(res => {
             copyRooms = res.data
             console.log('copyRoom :')

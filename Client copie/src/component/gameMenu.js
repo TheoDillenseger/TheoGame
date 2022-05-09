@@ -4,6 +4,7 @@ import io from 'socket.io-client'
 
 let socket;
 let roomi;
+let loc = 'http://213.32.88.158'
 
 
 
@@ -11,7 +12,7 @@ let roomi;
 function GameMenu({location}){
 
     const[name,setName] = useState('');
-    const[room,setRoom] = useState('test');
+    const[room,setRoom] = useState('');
     const[users,setUsers] = useState([]);
     const[rooms,setRooms] = useState([]);
     const[user,setUser] = useState({});
@@ -22,7 +23,7 @@ function GameMenu({location}){
     const[nbQuestion,setNbQuestion] = useState(10);
     const[compteur,setCompteur] = useState(0);
 
-    const ENDPOINT = 'localhost:5000'
+    const ENDPOINT = '213.32.88.158:5000'
 
     useEffect(()=> {
         
