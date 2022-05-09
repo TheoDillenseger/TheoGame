@@ -4,7 +4,7 @@ import queryString from 'query-string';
 import io from 'socket.io-client'
 import axios from 'axios'
 let socket;
-const ENDPOINT = '213.32.88.158:5000'
+const ENDPOINT = 'localhost:5000'
 
 const JoinGame = ({location}) =>{
 

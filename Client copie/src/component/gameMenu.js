@@ -23,7 +23,7 @@ function GameMenu({location}){
     const[nbQuestion,setNbQuestion] = useState(10);
     const[compteur,setCompteur] = useState(0);
 
-    const ENDPOINT = '213.32.88.158:5000'
+    const ENDPOINT = 'localhost:5000'
 
     useEffect(()=> {
         
