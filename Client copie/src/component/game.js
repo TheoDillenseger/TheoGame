@@ -5,7 +5,7 @@ import io from 'socket.io-client'
 let socket;
 
 
-const ENDPOINT = 'localhost:5000'
+const ENDPOINT = '213.32.88.158'
 
 class Game extends Component {
     constructor(props) {
