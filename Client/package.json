@@ -2,7 +2,7 @@
   "name": "theo_game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://51.178.136.153/",
+  "homepage": "http://51.77.194.67/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
